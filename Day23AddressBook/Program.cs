@@ -19,6 +19,7 @@ namespace Day23AddressBook
                 Console.WriteLine("\nEnter 1 to Add Details");
                 Console.WriteLine("Enter 2 to Add 2nd Person Details");
                 Console.WriteLine("Enter 3 to Edit Existing Detail");
+                Console.WriteLine("Enter 4 to Delete Existing Detials");
                 a.value = Convert.ToInt32(Console.ReadLine());
                 switch (a.value)
                 {
@@ -148,6 +149,26 @@ namespace Day23AddressBook
 
                             Console.WriteLine("\nDetails After Editing Are : \n");
                             Console.WriteLine("First Name = " + addbook[8] + "\nLastt Name = " + addbook[9] + "\nAddress = " + addbook[10] + "\nCity = " + addbook[11] + "\nState = " + addbook[12] + "\nZip = " + addbook[13] + "\nPhone Number = " + addbook[14] + "\nEmail = " + addbook[15]);
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine("Enter First Name and Last Name of the person to delete his record");
+                        string fname1 = Convert.ToString(Console.ReadLine());
+                        string lname2 = Convert.ToString(Console.ReadLine());
+                        if ((a.firstName == fname1) && (a.lastName == lname2))
+                        {
+                            //Removing Details for that Person
+                            addbook.RemoveRange(0, 7);
+
+                            Console.WriteLine("\n Record Deleted: \n");
+
+                        }
+                        else if ((a.firstName2 == fname1) && (a.lastName2 == lname2))
+                        {
+                            //Removing Details for that Person
+                            addbook.RemoveRange(8, 15);
+                            Console.WriteLine("\n Record Deleted: \n");
+
                         }
                         break;
                 }
