@@ -23,6 +23,7 @@ namespace Day23AddressBook
                 Console.WriteLine("Enter 4 to Delete Existing Detials");
                 Console.WriteLine("Enter 5 to Add 3rd Person Details");
                 Console.WriteLine("Enter 6 to Add details to AddressBook 2");
+                Console.WriteLine("Enter 7 to Search Person Based on City and State");
                 a.value = Convert.ToInt32(Console.ReadLine());
                 switch (a.value)
                 {
@@ -59,14 +60,14 @@ namespace Day23AddressBook
                         break;
                     //UC 2
                     case 2:
-                        
+
                         Console.WriteLine("Enter First Name ");
                         a.firstName2 = Convert.ToString(Console.ReadLine());
                         addbook.Add(a.firstName2);
                         Console.WriteLine("Enter Last Name");
                         a.lastName2 = Convert.ToString(Console.ReadLine());
                         addbook.Add(a.lastName2);
-                        check(a.firstName2,a.lastName2);
+                        check(a.firstName2, a.lastName2);
                         Console.WriteLine("Enter Address ");
                         a.address2 = Convert.ToString(Console.ReadLine());
                         addbook.Add(a.address2);
@@ -277,21 +278,27 @@ namespace Day23AddressBook
                         Console.WriteLine("\nGiven Detail Are : \n");
                         Console.WriteLine("\nFirst Name = " + addbook2[0] + "\nLastt Name = " + addbook2[1] + "\nAddress = " + addbook2[2] + "\nCity = " + addbook2[3] + "\nState = " + addbook2[4] + "\nZip = " + addbook2[5] + "\nPhone Number = " + addbook2[6] + "\nEmail = " + addbook2[7]);
                         break;
+                    case 7:
+                        Console.WriteLine("Enter State and City");
+                        string searchState = Console.ReadLine();
+                        string searchCity = Console.ReadLine();
+                        search(searchState, searchCity);
+                        break;
                 }
                 choice();
-                
+
             }
             // UC 7 Changed Logic and Checking For Duplicate Values
             void check(string fname, string lname)
             {
-                if( addbook[0].Equals(fname) && addbook[1].Equals(lname))
+                if (addbook[0].Equals(fname) && addbook[1].Equals(lname))
                 {
                     Console.WriteLine("This Person Detail Alreay Exist");
                     choice();
                 }
-               
+
             }
-            void check2(string fname,string lname)
+            void check2(string fname, string lname)
             {
                 if (addbook[8].Equals(fname) && addbook[9].Equals(lname))
                 {
@@ -299,10 +306,30 @@ namespace Day23AddressBook
                     choice();
                 }
             }
-
+            void search(string searchState, string searchCity)
+            {
+                if (addbook[4].Equals(searchState) || addbook[3].Equals(searchCity))
+                {
+                    Console.WriteLine("person in searched State or City is :" + addbook[0]);
+                }
+                else if (addbook[12].Equals(searchState) || addbook[11].Equals(searchCity))
+                {
+                    Console.WriteLine("person in searched State or City is :" + addbook[8]);
+                }
+                else if (addbook[20].Equals(searchState) || addbook[19].Equals(searchCity))
+                {
+                    Console.WriteLine("person in searched State or City is :" + addbook[16]);
+                }
+                else
+                {
+                    Console.WriteLine("person in searched state or city is :" + addbook2[0]);
+                }
+            }
         }
+
     }
 }
+
 
 
 
