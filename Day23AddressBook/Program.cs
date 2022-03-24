@@ -14,7 +14,7 @@ namespace Day23AddressBook
             Program p = new Program();
             Dictionary<int, string> addressBook = new Dictionary<int, string>();
             Dictionary<int, string> addressBook2 = new Dictionary<int, string>();
-            
+
 
             Choice();
             void Choice()
@@ -65,6 +65,7 @@ namespace Day23AddressBook
                         Console.WriteLine("Enter Last Name ");
                         p.lastName = Console.ReadLine();
                         addressBook.Add(9, p.lastName);
+                        DuplicateSearch(p.firstName, p.lastName);
                         Console.WriteLine("Enter Address ");
                         p.address = Console.ReadLine();
                         addressBook.Add(10, p.address);
@@ -106,6 +107,7 @@ namespace Day23AddressBook
                         Console.WriteLine("Enter Last Name ");
                         p.lastName = Console.ReadLine();
                         addressBook.Add(17, p.lastName);
+                        DuplicateSearch(p.firstName, p.lastName);
                         Console.WriteLine("Enter Address ");
                         p.address = Console.ReadLine();
                         addressBook.Add(18, p.address);
@@ -135,6 +137,7 @@ namespace Day23AddressBook
                         Console.WriteLine("Enter Last Name ");
                         p.lastName = Console.ReadLine();
                         addressBook2.Add(1, p.lastName);
+                        DuplicateSearch(p.firstName, p.lastName);
                         Console.WriteLine("Enter Address ");
                         p.address = Console.ReadLine();
                         addressBook2.Add(2, p.address);
@@ -295,7 +298,7 @@ namespace Day23AddressBook
                         for (int i = 0; i < 8; i++)
                         {
                             addressBook.Remove(i);
-                           
+
                         }
                         Console.WriteLine("Record Deleted!");
                     }
@@ -304,7 +307,7 @@ namespace Day23AddressBook
                         for (int i = 8; i < 16; i++)
                         {
                             addressBook.Remove(i);
-                            
+
                         }
                         Console.WriteLine("Record Deleted!");
                     }
@@ -313,12 +316,33 @@ namespace Day23AddressBook
                         Console.WriteLine("Given Person Details Does Not Exists");
                     }
                 }
+                void DuplicateSearch(string fname, string lname)
+                {
+                    if (addressBook[0].Equals(fname) && addressBook[1].Equals(lname))
+                    {
+                        Console.WriteLine("This Person Record Already Exists");
+                    }
+                    else if (addressBook[8].Equals(fname) && addressBook[9].Equals(lname))
+                    {
+                        Console.WriteLine("This Person Record Already Exists");
+                    }
+                    else if (addressBook[16].Equals(fname) && addressBook[17].Equals(lname))
+                    {
+                        Console.WriteLine("This Person Record Already Exists");
+                    }
+                   
+                    Choice();
+
+                }
 
             }
-        }
 
+        }
     }
+
 }
+
+
 
 
 
