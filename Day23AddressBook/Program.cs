@@ -11,6 +11,7 @@ namespace Day23AddressBook
             Console.WriteLine("Welcome to Address Book Program");
             Address a = new Address();
             ArrayList addbook = new ArrayList();
+            ArrayList addbook2 = new ArrayList();
 
              
             choice();
@@ -21,6 +22,7 @@ namespace Day23AddressBook
                 Console.WriteLine("Enter 3 to Edit Existing Detail");
                 Console.WriteLine("Enter 4 to Delete Existing Detials");
                 Console.WriteLine("Enter 5 to Add 3rd Person Details");
+                Console.WriteLine("Enter 6 to Add details to AddressBook 2");
                 a.value = Convert.ToInt32(Console.ReadLine());
                 switch (a.value)
                 {
@@ -182,6 +184,7 @@ namespace Day23AddressBook
                             Console.WriteLine("First Name = " + addbook[16] + "\nLastt Name = " + addbook[17] + "\nAddress = " + addbook[18] + "\nCity = " + addbook[19] + "\nState = " + addbook[20] + "\nZip = " + addbook[21] + "\nPhone Number = " + addbook[22] + "\nEmail = " + addbook[23]);
                         }
                         break;
+                        //UC 4
                     case 4:
                         Console.WriteLine("Enter First Name and Last Name of the person to delete his record");
                         string fname1 = Convert.ToString(Console.ReadLine());
@@ -208,6 +211,7 @@ namespace Day23AddressBook
                             Console.WriteLine("\n Record Deleted \n");
                         }
                         break;
+                        //UC 5
                     case 5:
 
                         Console.WriteLine("Enter First Name ");
@@ -237,6 +241,36 @@ namespace Day23AddressBook
 
                         Console.WriteLine("\nGiven Detail Are : \n");
                         Console.WriteLine("First Name = " + addbook[16]+"Lastt Name = " + addbook[17]+"Address = " + addbook[18]+"City = " + addbook[19]+"State = " + addbook[20]+"Zip = " + addbook[21]+"Phone Number = " + addbook[22]+"Email = " + addbook[23]);
+                        break;
+                    //UC 6
+                    case 6:
+                        Console.WriteLine("Enter First Name ");
+                        a.firstName3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.firstName3);
+                        Console.WriteLine("Enter Last Name");
+                        a.lastName3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.lastName3);
+                        Console.WriteLine("Enter Address ");
+                        a.address3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.address3);
+                        Console.WriteLine("Enter city");
+                        a.city3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.city3);
+                        Console.WriteLine("Enter state");
+                        a.state3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.state3);
+                        Console.WriteLine("Enter zip");
+                        a.zip3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.zip3);
+                        Console.WriteLine("Enter Phone Number");
+                        a.phoneNo3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.phoneNo3);
+                        Console.WriteLine("Enter Email");
+                        a.email3 = Convert.ToString(Console.ReadLine());
+                        addbook2.Add(a.email3);
+
+                        Console.WriteLine("\nGiven Detail Are : \n");
+                        Console.WriteLine("First Name = " + addbook2[0] + "Lastt Name = " + addbook2[1] + "Address = " + addbook2[2] + "City = " + addbook2[3] + "State = " + addbook2[4] + "Zip = " + addbook2[5] + "Phone Number = " + addbook2[6] + "Email = " + addbook2[7]);
                         break;
                 }
                 choice();
