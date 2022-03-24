@@ -151,6 +151,7 @@ namespace Day23AddressBook
                             Console.WriteLine("First Name = " + addbook[8] + "\nLastt Name = " + addbook[9] + "\nAddress = " + addbook[10] + "\nCity = " + addbook[11] + "\nState = " + addbook[12] + "\nZip = " + addbook[13] + "\nPhone Number = " + addbook[14] + "\nEmail = " + addbook[15]);
                         }
                         break;
+                        //UC 4
                     case 4:
                         Console.WriteLine("Enter First Name and Last Name of the person to delete his record");
                         string fname1 = Convert.ToString(Console.ReadLine());
