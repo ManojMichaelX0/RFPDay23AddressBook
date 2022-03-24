@@ -182,6 +182,7 @@ namespace Day23AddressBook
                             Console.WriteLine("First Name = " + addbook[16] + "\nLastt Name = " + addbook[17] + "\nAddress = " + addbook[18] + "\nCity = " + addbook[19] + "\nState = " + addbook[20] + "\nZip = " + addbook[21] + "\nPhone Number = " + addbook[22] + "\nEmail = " + addbook[23]);
                         }
                         break;
+                        //UC 4
                     case 4:
                         Console.WriteLine("Enter First Name and Last Name of the person to delete his record");
                         string fname1 = Convert.ToString(Console.ReadLine());
@@ -208,6 +209,7 @@ namespace Day23AddressBook
                             Console.WriteLine("\n Record Deleted \n");
                         }
                         break;
+                        //UC 5
                     case 5:
 
                         Console.WriteLine("Enter First Name ");
