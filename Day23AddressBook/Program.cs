@@ -238,7 +238,7 @@ namespace Day23AddressBook
                         addbook.Add(a.email3);
 
                         Console.WriteLine("\nGiven Detail Are : \n");
-                        Console.WriteLine("First Name = " + addbook[16]+"Lastt Name = " + addbook[17]+"Address = " + addbook[18]+"City = " + addbook[19]+"State = " + addbook[20]+"Zip = " + addbook[21]+"Phone Number = " + addbook[22]+"Email = " + addbook[23]);
+                        Console.WriteLine("First Name = " + addbook[16]+"\nLastt Name = " + addbook[17]+"\nAddress = " + addbook[18]+"\nCity = " + addbook[19]+"\nState = " + addbook[20]+"\nZip = " + addbook[21]+"\nPhone Number = " + addbook[22]+"\nEmail = " + addbook[23]);
                         break;
                 }
                 choice();
