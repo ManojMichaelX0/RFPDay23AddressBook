@@ -1,0 +1,16 @@
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.csproj.AssemblyReference.cache
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.AssemblyInfoInputs.cache
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.AssemblyInfo.cs
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.csproj.CoreCompileInputs.cache
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.exe
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.deps.json
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.runtimeconfig.json
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.runtimeconfig.dev.json
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.dll
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\bin\Debug\net5.0\Day23AddressBook.pdb
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.dll
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\refint\Day23AddressBook.dll
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.pdb
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\Day23AddressBook.genruntimeconfig.cache
+D:\.net\Day 23 AddressBook\Day23AddressBook\Day23AddressBook\obj\Debug\net5.0\ref\Day23AddressBook.dll
