@@ -107,7 +107,7 @@ namespace Day23AddressBook
                         Console.WriteLine("Enter Last Name ");
                         p.lastName = Console.ReadLine();
                         addressBook.Add(17, p.lastName);
-                        DuplicateSearch(p.firstName, p.lastName);
+                        DuplicateSearch2(p.firstName, p.lastName);
                         Console.WriteLine("Enter Address ");
                         p.address = Console.ReadLine();
                         addressBook.Add(18, p.address);
@@ -318,17 +318,26 @@ namespace Day23AddressBook
                 }
                 void DuplicateSearch(string fname, string lname)
                 {
-                    if (addressBook[0].Equals(fname) && addressBook[1].Equals(lname))
+                    if (addressBook[0].Equals(addressBook[8]) && addressBook[1].Equals(addressBook[9]))
                     {
                         Console.WriteLine("This Person Record Already Exists");
+                        Choice();
                     }
-                    else if (addressBook[8].Equals(fname) && addressBook[9].Equals(lname))
+                    
+                }
+                void DuplicateSearch2(string fname,string lname)
+                {
+                    if (addressBook[0].Equals(addressBook[16]) && addressBook[1].Equals(addressBook[17]))
                     {
                         Console.WriteLine("This Person Record Already Exists");
+                        Choice();
                     }
-                    else if (addressBook[16].Equals(fname) && addressBook[17].Equals(lname))
+
+                    
+                    if (addressBook[8].Equals(addressBook[16]) && addressBook[9].Equals(addressBook[17]))
                     {
                         Console.WriteLine("This Person Record Already Exists");
+                        Choice();
                     }
                    
                     Choice();
